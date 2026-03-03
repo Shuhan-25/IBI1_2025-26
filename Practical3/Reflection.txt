@@ -1,0 +1,13 @@
+What went well:
+Successfully learned basic Git commands (init, add, commit, log)
+Created and merged branches
+Edited files using nano
+
+Challenges:
+Had issues with cloning the repository
+Forgot to add files before committing
+Had to learn how to use nano editor
+
+Questions:
+How to resolve merge conflicts more efficiently?
+What's the difference between git revert and git reset?
