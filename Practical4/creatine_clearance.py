@@ -14,38 +14,38 @@
 #   check the gender and use proper equation to calculate
 #5. Display the result
 
-#Get user inputs
+#After the tutorial class, I got some new idea of this process
+#if something is wrong, the new code would be able to fix just that part instead of starting over again
+
+
 
 
 valid_input = True
 age=float(input("Enter age (years):"))
 #Validate age
-if age >= 100:
-    print("ERROR: Age must be less than 100 years")
-    print("Please correct the errors above and run the program again.")
-    exit()
+while age >= 100:
+        print("ERROR: Age must be less than 100 years")
+        age=float(input("Enter age (years):"))
     
 weight=float(input("Enter weight (kg):"))
 #Validate weight
-if weight <= 20 or weight >= 80:
-    print("ERROR: Weight must be between 20 kg and 80 kg")
-    print("Please correct the errors above and run the program again.")
-    exit()
+while weight <= 20 or weight >= 80:
+        print("ERROR: Weight must be between 20 kg and 80 kg")
+        weight=float(input("Enter weight (kg):"))
+   
     
 Cr=float(input("Enter creatinine concentration (umol/L):"))
 #Validate creatinine concentration
-if Cr <= 0 or Cr >= 100:
-    print("ERROR: Creatinine concentration must be between 0 and 100 umol/L")
-    print("Please correct the errors above and run the program again.")
-    exit()
+while Cr <= 0 or Cr >= 100:
+        print("ERROR: Creatinine concentration must be between 0 and 100 umol/L")
+        Cr=float(input("Enter creatinine concentration (umol/L):"))
+    
     
 gender=input("Enter gender (male/female):").lower() #in small letter
 #Validate gender
-if gender != "male" and gender != "female":
-    print("ERROR: Gender must be either 'male' or 'female'")
-    print("Please correct the errors above and run the program again.")
-    exit()
-
+while gender != "male" and gender != "female":
+        print("ERROR: Gender must be either 'male' or 'female'")
+        gender=input("Enter gender (male/female):").lower()
 
 #Calculate CrCl if all inputs are valid
 
