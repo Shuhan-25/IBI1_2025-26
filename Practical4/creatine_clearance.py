@@ -9,7 +9,7 @@
 #   gender must be either male or female
 #3. If any input is invalid:
 #   Report which input variable need corrected
-#   No not calculate CrCl
+#   Do not calculate CrCl
 #4. If all the inputs are valid:
 #   check the gender and use proper equation to calculate
 #5. Display the result
