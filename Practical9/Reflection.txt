@@ -1,0 +1,13 @@
+Overall, this practical was challenging but very rewarding.
+
+The practical had varying levels of difficulty. The first part (SIR.py) was relatively straightforward because the pseudocode and formulas were clearly provided. 
+
+The second part (SIR_vaccination.py) was also manageable, but I initially made a critical mistake: incorrect indentation caused the simulation to run only for 100% vaccination rate. It took me a while to debug this, but once I realized the issue, I understood how important proper indentation is in Python.
+
+The third part (spatial_SIR.py) was the most difficult. Handling the 8 neighbors of each infected cell, checking grid boundaries, and updating the population simultaneously required careful thinking and structuring. At first, my plots only showed the initial time point (t=0). I later realized that plt.show() was blocking the code execution. After moving it to the end, all four snapshots appeared correctly.
+
+What I enjoyed the most was the plotting part, seeing the numerical results turn into visual graphs and heatmaps gave me a real sense of achievement and satisfaction. I also liked using the viridis colormap; the gradient from dark purple (0% vaccinated) to bright yellow (100% vaccinated) made the plot both beautiful and informative.
+
+I enjoyed the debugging parts less, especially when the code ran without errors but produced wrong results (like only one plot or all vaccination rates showing 100%). However, solving these problems helped me understand the code much deeper.
+
+The most important thing I learned from this practical is the ability to abstract real-world problems into code models. This practical taught me how to break down a complex real-world process into simple, discrete steps that a computer can simulate. I also learned that models don't have to be perfect. The SIR model makes many simplifications (no incubation period, no age structure, well-mixed population), but it still gives useful insights. This taught me that the goal of modelling is not to capture every detail, but to capture the essential dynamics.
